@@ -22,8 +22,13 @@ const App = () => {
   const location = useLocation();
 
   useEffect(() => {
-    document.body.style.backgroundColor = location.pathname === '/login' ? 'green' : 'yuzaehbjn';
+    if (location.pathname === '/login' || location.pathname === '/register' || location.pathname === '/forgot') {
+      document.body.style.backgroundImage = "url('https://media.pathe.fr/files/Logos/backdrop_pathe_poster.png')";
+    } else {
+      document.body.style.backgroundImage = 'none';
+    }
   }, [location.pathname]);
+
 
   return (
     <div className="app">

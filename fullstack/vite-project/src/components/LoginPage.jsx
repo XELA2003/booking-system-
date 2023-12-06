@@ -42,24 +42,24 @@ const LoginForm = () => {
 
     return (
         <div className='login-body'>
-        <div className="login-form">
-            <form onSubmit={handleLogin}>
-                <div className='login-title'>
-                    <h2>Log in</h2>
-                </div>
-                <div className='login-inputs'>
-                    <input type="text" placeholder="Nom d'utilisateur" value={nomUtilisateur} onChange={e => setNomUtilisateur(e.target.value)} />
-                    <input type="password" placeholder="Mot de passe" value={motDePasse} onChange={e => setMotDePasse(e.target.value)} />
-                </div>
-                <button type="submit" className="login-btn">Login</button>
-                <div className="login-form-footer">
-                    <p>Vous n'avez pas de compte ? Inscrivez-vous <Link to="/register">ici</Link></p>
-                </div>
-                <div className="login-form-footer">
-                    <p>Mot de passe oublié ? cliquez <Link to="/forgot">ici</Link></p>
-                </div>
-            </form>
-        </div>
+            <div className="login-form">
+                <form onSubmit={handleLogin}>
+                    <div className='login-title'>
+                        <h2>Log in</h2>
+                    </div>
+                    <div className='login-inputs'>
+                        <input type="text" placeholder="Nom d'utilisateur" value={nomUtilisateur} onChange={e => setNomUtilisateur(e.target.value)} />
+                        <input type="password" placeholder="Mot de passe" value={motDePasse} onChange={e => setMotDePasse(e.target.value)} />
+                    </div>
+                    <button type="submit" className="login-btn">Login</button>
+                    <div className="login-form-footer">
+                        <p>Vous n'avez pas de compte ? Inscrivez-vous <Link to="/register">ici</Link></p>
+                    </div>
+                    <div className="login-form-footer">
+                        <p>Mot de passe oublié ? cliquez <Link to="/forgot">ici</Link></p>
+                    </div>
+                </form>
+            </div>
         </div>
     );
 };

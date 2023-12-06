@@ -180,7 +180,7 @@ const Moviepage = () => {
     }
 
     return (
-        <div>
+        <div className='movie-page'>
             <div className="movie-info-container">
                 <SelectedMovie movieId={id} />
             </div>
