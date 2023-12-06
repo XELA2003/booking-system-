@@ -1,0 +1,53 @@
+Register css
+/*REGISTER */
+
+.register-form {
+  max-width: 310px;
+  margin: 120px auto;
+  padding: 55px;
+  padding-left: 35px;
+  background: #2B2B2B;
+  padding-top: 30px;
+  padding-bottom: 80px;
+
+}
+
+.create-account-btn {
+  margin-top: 50px;
+  margin-left: 35px;
+  background: #000000;
+  color: white;
+  padding: 15px 50px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+}
+
+.register-form input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  color: rgb(255, 255, 255);
+  background: #000000;
+  border-style: none;
+  margin-bottom: 20px;
+}
+
+.register-title {
+  padding-left: 15px;
+  padding-bottom: 5px;
+}
+
+.register-form-footer {
+  text-align: center;
+  padding-top: 10px;
+  color: white;
+  font-size: 15px;
+  padding-left: 25px;
+}
+
+
+
+/*END OF REGISTER */

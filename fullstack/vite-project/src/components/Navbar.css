@@ -1,0 +1,156 @@
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Cela aligne les éléments aux extrémités de la barre */
+    align-items: center;
+    padding: 10px 200px;
+    background-color: transparent;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+.left-links, .right-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffcc00;
+}
+
+.nav-user-icon {
+    height: 50px; /* Ajustez selon la taille souhaitée */
+    width: auto;
+}
+
+.navbar.hidden {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.left-links, .right-links {
+    display: flex;
+    gap: 20px;
+}
+
+/* ... Autres styles ... */
+
+/* ... Autres styles ... */
+
+.nav-user-profile {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #333; /* Couleur de fond pour le menu déroulant */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px; /* Bords arrondis */
+    overflow: hidden;
+    z-index: 100;
+    width: 180px; /* Largeur du menu déroulant */
+    font-family: Arial, sans-serif; /* Police de caractères */
+  }
+  
+  .nav-user-profile:hover .dropdown {
+    display: flex;
+    flex-direction: column; /* Affichez les éléments en colonne */
+    align-items: center;
+  }
+  
+  .dropdown-item {
+    color: #fff; /* Couleur de texte pour les éléments du menu */
+    padding: 12px 0; /* Espacement interne pour chaque élément */
+    text-decoration: none;
+    width: 100%;
+    text-align: center; /* Centrer le texte */
+    transition: background-color 0.3s;
+  }
+  
+  .dropdown-item1 {
+    color: #fff;
+    padding: 12px 0;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s;
+    background-color: #333;
+    font-family: Arial, sans-serif;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #ffcc00; /* Couleur de fond au survol */
+  }
+
+  .dropdown-item1:hover {
+    background-color: #ffcc00; /* Couleur de fond au survol */
+  }
+  
+  .nav-user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid #fff; /* Ajouter une bordure autour de l'icône */
+  }
+  
+
+/* ... autres styles ... */
+
+/* ... autres styles ... */
+/* Styles pour la barre de recherche */
+.search-bar {
+  display: inline-block; /* pour aligner le formulaire de recherche avec les autres liens */
+  margin-left: 20px;
+  vertical-align: middle;
+}
+
+.search-bar input {
+  border: 2px solid #ddd;
+  padding: 10px;
+  border-radius: 20px;
+  outline: none;
+  width: 250px; /* ou la largeur que vous préférez */
+}
+
+.search-bar button {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  cursor: pointer;
+  color: #ddd;
+  background-color: transparent;
+}
+
+.search-bar button:focus {
+  outline: none;
+}
+
+/* Ajout d'une icône de loupe au bouton de recherche */
+.search-bar button::before {
+  content: '\f002'; /* Code Unicode pour l'icône de loupe de Font Awesome */
+  font-family: 'Font Awesome 5 Free'; /* Assurez-vous que Font Awesome est chargé dans votre projet */
+  font-weight: 900;
+}

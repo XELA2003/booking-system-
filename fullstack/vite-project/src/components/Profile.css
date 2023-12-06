@@ -1,0 +1,34 @@
+.profile-container {
+    padding: 60px 20px 20px 20px; /* Laissez de la place pour la barre de navigation */
+    min-height: calc(100vh - 60px); /* Hauteur moins l'espace de la barre de navigation */
+    color: #fff;
+    background-color: #333; /* Couleur de fond pour contraster avec le texte */
+  }
+  
+  .comments-container {
+    margin-top: 20px;
+  }
+  
+  .comment {
+    background-color: #444;
+    border: 1px solid #555;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .comment-text {
+    color: #fff;
+    margin: 0;
+  }
+  
+  .comment-date {
+    color: #aaa;
+    font-size: 0.9em;
+    margin-top: 5px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
