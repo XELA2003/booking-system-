@@ -1,48 +1,53 @@
-.movieList{
-    background-color: black;
+.main {
+    /* Autres styles */
+    overflow-y: auto;
+    /* ou overflow-y: scroll; */
+    height: 100vh;
 }
 
-.featured-movie {
-    position: relative;
-    /* Vos autres styles pour .featured-movie */
+.movie-list {
+    padding: 20px;
+    background: #000000;
 }
 
-.movie-info-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-190%, -50%);
-    color: white;
-    text-align: center;
-    z-index: 10;
-}
-
-.movie-title {
-    font-size: 3em; /* Ajustez la taille selon vos besoins */
-    margin: 0 0 0.2em 0; /* Ajustez l'espace autour du titre */
-    font-family: 'Bebas Neue', cursive;
-}
-
-.movie-subtitle {
-    font-size: 2em; /* Ajustez la taille selon vos besoins */
-    margin: 0 0 1em 0; /* Ajustez l'espace entre le sous-titre et le bouton */
-    font-family: 'Bebas Neue', cursive;
+.movies {
+    display: flex;
+    justify-content: space-around;
 }
 
 .book-now-btn {
-    background-color: #000000; /* Couleur de fond du bouton */
-    color: white; /* Couleur du texte du bouton */
-    border: none; /* Retirer la bordure du bouton */
-    padding: 10px 20px; /* Ajustez le padding selon vos besoins */
-    font-size: 1em; /* Ajustez la taille du texte */
-    cursor: pointer; /* Change le curseur en main lors du survol */
-    margin-top: 20px; /* Espace au-dessus du bouton */
-    transition: background-color 0.3s; /* Transition pour l'effet de survol */
-    border-radius: 5px; /* Arrondir les coins du bouton */
-    
+    background: #333;
+    color: white;
+    padding: 20px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 550px;
 }
 
 .book-now-btn:hover {
-    background-color: rgb(0, 0, 0); /* Couleur de fond du bouton lors du survol */
+    color: #ffcc00;
+    /* Change the color on hover as desired */
 }
 
+.movie {
+    width: 150px;
+    height: 200px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    background-color: #333;
+    background-size: cover;
+    background-position: center;
+    background-image: url('/booking-system-/fullstack/vite-project/src/components/images/hunger-games-poster.jpg');
+}
+
+.featured-movie {
+    background-image: url('/booking-system-/fullstack/vite-project/src/img/Napoleon_Poster_0101.jpg');
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: static;
+}

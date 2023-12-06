@@ -54,9 +54,9 @@ const NavBar = () => {
 
       {user && (
         <nav className="right-links">
-          <div 
-            className="nav-user-profile" 
-            onMouseEnter={() => setShowDropdown(true)} 
+          <div
+            className="nav-user-profile"
+            onMouseEnter={() => setShowDropdown(true)}
             onMouseLeave={() => setShowDropdown(false)}
           >
             <img src={userIcon} alt="Profile" className="nav-user-icon" />

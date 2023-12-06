@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import './App.css';
+import './components/movie.css';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import LoginForm from './components/LoginPage';
 import RegisterForm from './components/RegisterPage';
@@ -21,16 +22,16 @@ const App = () => {
   const location = useLocation();
 
   useEffect(() => {
-    document.body.style.backgroundColor = location.pathname === '/login' ? 'votre' : 'yuzaehbjn';
+    document.body.style.backgroundColor = location.pathname === '/login' ? 'green' : 'yuzaehbjn';
   }, [location.pathname]);
 
   return (
     <div className="app">
       <NavBar />
       <Routes>
-      <Route path="/home" element={<HomePage />} />
+        <Route path="/home" element={<HomePage />} />
         <Route path="/login" element={<LoginForm />} />
-        <Route path="/movies" element={<Movie />} />
+        <Route path="/movies/:movieId" element={<Movie />} />
         <Route path="/register" element={<RegisterForm />} />
         <Route path="/forgot" element={<ForgotForm />} />
         <Route path="/profile" element={<Profile />} />

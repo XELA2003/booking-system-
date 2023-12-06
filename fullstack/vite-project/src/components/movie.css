@@ -1,0 +1,165 @@
+#release {
+    color: #6C6C6C;
+    padding-top: 270px;
+    padding-right: 1250px;
+}
+
+.session-rectangle {
+    width: 150px;
+    height: 100px;
+    background-color: #2B2B2B;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+/*movie.css*/
+
+
+
+.top-left-image {
+    position: absolute;
+    top: 79px;
+    left: 1px;
+    padding-right: 400px;
+    z-index: 999;
+}
+
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    background: #000000;
+    color: white;
+    padding: 20px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 300px;
+    margin-top: -32px;
+}
+
+.play-button:hover {
+    transform: scale(1.06);
+    transition: transform .18s cubic-bezier(.06, .34, .52, .94);
+}
+
+
+
+.video-container {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.trailer-video {
+    width: 55%;
+    height: auto;
+    display: block;
+    margin-left: 690px;
+    z-index: 0;
+}
+
+
+.poster-overlay {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    max-width: 10%;
+    margin-top: 50px;
+    margin-left: 10px;
+    z-index: 1;
+}
+
+.movie-little-infos {
+    font-size: 9px;
+}
+
+
+
+.movie-sessions {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 150px;
+}
+
+.calendar-btn {
+    width: 150px;
+    height: 100px;
+    background-color: #2B2B2B;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+.movie:hover {
+    transform: scale(1.06);
+    transition: transform .18s cubic-bezier(.06, .34, .52, .94);
+}
+
+.movie-sessions-container {
+    background-color: #000;
+    /* Ensure footer background is black */
+    width: 100%;
+}
+
+
+/* MOVIE PAGE */
+
+h1.Movie-title {
+    color: white;
+}
+
+
+p.Movie-description {
+    margin-bottom: 150px;
+    margin-right: 650px;
+    color: white;
+    display: flex
+}
+
+
+.comment-input {
+    width: 1000px;
+    margin-left: 250px;
+    height: 17px;
+
+}
+
+.add-comment-button {
+    margin-left: 670px;
+    margin-top: 30px;
+    background: #000000;
+    color: white;
+    padding: 20px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-comment-button:hover {
+    transform: scale(1.06);
+
+}
+
+.comments-section {
+    background-color: #333;
+}
+
+.hero-film-bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    z-index: 0;
+}

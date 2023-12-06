@@ -57,7 +57,19 @@ app.get('/search', (req, res) => {
   
 
 
-
+// Route pour l'enregistrement des utilisateurs
+app.post('/register', (req, res) => {
+    const { email, mot_de_passe, nom, prenom } = req.body;
+    const sqlInsert = "INSERT INTO utilisateurs (email, mot_de_passe, nom, prenom) VALUES (?, ?, ?, ?)";
+    db.query(sqlInsert, [email, mot_de_passe, nom, prenom], (err, results) => {
+        if (err) {
+            console.error(err);
+            res.status(500).send('Erreur lors de l\'enregistrement de l\'utilisateur');
+        } else {
+            res.status(201).send('Utilisateur enregistré avec succès');
+        }
+    });
+});
 
 // Route pour la connexion des utilisateurs
 app.post('/login', (req, res) => {
@@ -82,29 +94,6 @@ app.post('/login', (req, res) => {
         }
     });
 });
-
-app.post('/register', (req, res) => {
-    const { nom_utilisateur, mot_de_passe } = req.body;
-
-    const sqlInsert = "INSERT INTO utilisateurs (nom_utilisateur, mot_de_passe) VALUES (?, ?)";
-    db.query(sqlInsert, [nom_utilisateur, mot_de_passe], (err, results) => {
-        if (err) {
-            // Log the error for server side debugging
-            console.error(err);
-
-            // Check if it's a duplicate entry error
-            if (err.code === 'ER_DUP_ENTRY') {
-                res.status(409).json({ message: 'Le nom d\'utilisateur existe déjà' });
-            } else {
-                // For other types of errors, send a generic error message
-                res.status(500).json({ message: 'Erreur lors de l\'enregistrement de l\'utilisateur' });
-            }
-        } else {
-            res.status(201).json({ message: 'Utilisateur enregistré avec succès', userId: results.insertId });
-        }
-    });
-});
-
 
 app.listen(8081, () => {
     console.log("Server is running on port 8081");
