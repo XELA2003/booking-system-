@@ -69,11 +69,14 @@ const MovieList = () => {
 
 const FeaturedMovie = () => (
     <div className="featured-movie">
-        <div className='featured-movie-title'>
+        <div className="movie-info-overlay">
+            <h1 className="movie-title">Napoleon</h1>
+            <p className="movie-subtitle">The Newest Saga</p>
+            <button className="book-now-btn">Book now</button>
         </div>
-        <button className="book-now-btn">Book now</button>
     </div>
 );
+
 
 
 // HomePage component
