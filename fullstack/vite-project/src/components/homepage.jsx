@@ -53,7 +53,7 @@ const MovieList = () => {
 
     return (
         <div className="movie-list">
-            <h2>Now showing:</h2>
+            <h2 className='now-showing'>Now showing:</h2>
             <div className="movies">
                 {movieImages.map((image, index) => (
                     <Link to={`/movies/${index}`} key={index}>

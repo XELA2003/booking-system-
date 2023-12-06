@@ -11,24 +11,3 @@ html {
   flex-direction: column;
   /* Stack children vertically */
 }
-
-
-/*END OF FORGOT */
-
-.featured-movie {
-  background-image: url('C:\Users\nico9\OneDrive\Bureau\projetweb\booking-system-\fullstack\vite-project\src\img\Napoleon_Poster_0101.jpg');
-  color: white;
-  padding: 20px;
-  text-align: center;
-  position: static;
-  background-size: cover;
-  background-position: center center;
-  /* Center the image */
-  background-repeat: no-repeat;
-  /* Prevent the image from repeating */
-  width: 96, 5vw;
-  /* Viewport width: ensures the div takes the full width of the viewport */
-  height: calc(96vw * (552 / 980));
-  /* Calculez la hauteur pour maintenir le ratio d'aspect de l'image */
-  /* Other styles */
-}
