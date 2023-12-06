@@ -65,3 +65,51 @@
 .now-showing {
     color: white;
 }
+.movieList{
+    background-color: black;
+}
+
+.featured-movie {
+    position: relative;
+    /* Vos autres styles pour .featured-movie */
+}
+
+.movie-info-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-190%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 10;
+}
+
+.movie-title {
+    font-size: 3em; /* Ajustez la taille selon vos besoins */
+    margin: 0 0 0.2em 0; /* Ajustez l'espace autour du titre */
+    font-family: 'Bebas Neue', cursive;
+}
+
+.movie-subtitle {
+    font-size: 2em; /* Ajustez la taille selon vos besoins */
+    margin: 0 0 1em 0; /* Ajustez l'espace entre le sous-titre et le bouton */
+    font-family: 'Bebas Neue', cursive;
+}
+
+.book-now-btn {
+    background-color: #000000; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton */
+    border: none; /* Retirer la bordure du bouton */
+    padding: 10px 20px; /* Ajustez le padding selon vos besoins */
+    font-size: 1em; /* Ajustez la taille du texte */
+    cursor: pointer; /* Change le curseur en main lors du survol */
+    margin-top: 20px; /* Espace au-dessus du bouton */
+    transition: background-color 0.3s; /* Transition pour l'effet de survol */
+    border-radius: 5px; /* Arrondir les coins du bouton */
+    
+}
+
+.book-now-btn:hover {
+    background-color: rgb(0, 0, 0); /* Couleur de fond du bouton lors du survol */
+}
+
